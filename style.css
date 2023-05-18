@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background: #2691d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 400px;
+    height: 490px;
+    background: #ffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login-box h2 {
+    font-size: 2.4rem;
+    margin-top: 20px;
+}
+
+.login-box .line {
+    width: 430px;
+    background: #2691d92e;
+    height: 1px;
+    margin-top: 20px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin-top: 46px;
+    color: rgba(0,0,0,0.507);
+    font-size: 1.05em;
+}
+
+.login-box form .input-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+}
+
+.input-field input {
+    height: 42px;
+    border-radius: 40px;
+    padding: 0 1.1rem;
+    border: solid 4px #2691d964;
+    outline: none;
+    font-size: 1.1rem;
+}
+
+.input-field label {
+    transform: translate(21px, -75px);
+    pointer-events: none;
+    transition: 600ms;
+}
+
+.input-field .forgot {
+    margin-left: 21px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.input-field .forgot:hover {
+    text-decoration: underline;
+}
+
+.input-field input:focus ~label {
+    color: black;
+}
+
+.input-field input:focus {
+    border: solid 4px #2691d99c;
+}
+
+form button {
+    height: 50px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    border: none;
+    background: #2691d9;
+    color: #ffff;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form .signup {
+    margin: 45px 89px;
+    width: 400px;
+}
+
+form .signup a {
+    color: #2691d9;
+    text-decoration: none;
+}
+form .signup a:hover {
+    text-decoration: underline;
+}
